@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI for Smart Grids and Renewable Energy Systems Workshop</title>
+  <meta name="description" content="Workshop on AI for smart grids and renewable energy systems. Details to be confirmed.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" data-bind="brand">DSL-UOW</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="menu-icon" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#presenters">Presenters</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#venue">Venue</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <svg class="hero-grid" aria-hidden="true" focusable="false" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+        <g class="grid-lines">
+          <path d="M0 300 L120 220 L260 260 L400 160 L540 220 L680 120 L800 180"/>
+          <path d="M60 380 L200 320 L260 260 L340 330 L480 290 L540 220 L660 300 L760 250"/>
+          <path d="M120 220 L180 120 L330 90 L400 160 L470 70 L680 120"/>
+        </g>
+        <g class="grid-nodes">
+          <circle cx="120" cy="220" r="5"/><circle cx="260" cy="260" r="5"/><circle cx="400" cy="160" r="7"/>
+          <circle cx="540" cy="220" r="5"/><circle cx="680" cy="120" r="7"/><circle cx="180" cy="120" r="4"/>
+          <circle cx="330" cy="90" r="4"/><circle cx="470" cy="70" r="4"/><circle cx="480" cy="290" r="4"/>
+          <circle cx="660" cy="300" r="4"/><circle cx="340" cy="330" r="4"/>
+        </g>
+      </svg>
+      <div class="container hero-body">
+        <p class="eyebrow">Workshop</p>
+        <h1 id="hero-title" data-bind="hero.title">AI for Smart Grids and Renewable Energy Systems</h1>
+                <ul class="hero-meta">
+          <li>
+            <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            <span class="sr-only">Date and time:</span> <span data-bind="hero.datetime"></span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span class="sr-only">Location:</span> <span data-bind="hero.location"></span>
+          </li>
+        </ul>
+        <p class="hero-cta" data-slot="hero-cta"></p>
+      </div>
+    </section>
+
+    <!-- 2. About Workshop -->
+    <section id="about" class="section" aria-labelledby="about-h">
+      <div class="container narrow">
+        <h2 id="about-h">About the Workshop</h2>
+        <div data-slot="about"></div>
+      </div>
+    </section>
+
+    <!-- 3. Presenters -->
+    <section id="presenters" class="section grey" aria-labelledby="presenters-h">
+      <div class="container">
+        <h2 id="presenters-h">Presenters</h2>
+        <ul class="presenter-grid" data-slot="presenters"></ul>
+      </div>
+    </section>
+
+    <!-- 4. Schedule -->
+    <section id="schedule" class="section" aria-labelledby="schedule-h">
+      <div class="container">
+        <h2 id="schedule-h">Schedule</h2>
+        <p class="schedule-date" data-bind="schedule.note"></p>
+        <table class="schedule-table">
+          <caption class="sr-only">Workshop schedule</caption>
+          <colgroup><col style="width:20%"><col style="width:80%"></colgroup>
+          <thead class="sr-only"><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
+          <tbody data-slot="schedule"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 5. Venue -->
+    <section id="venue" class="section grey" aria-labelledby="venue-h">
+      <div class="container narrow">
+        <h2 id="venue-h">Venue</h2>
+        <svg class="icon venue-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5M4 9v1h16V9M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18M2 22h20"/></svg>
+        <div data-slot="venue"></div>
+      </div>
+    </section>
+
+    <!-- 6. About the Team (belongs to the Venue nav item) -->
+    <section id="team" class="section" aria-labelledby="team-h">
+      <div class="container">
+        <h2 id="team-h">About the Team</h2>
+        <div class="narrow" data-slot="team-intro"></div>
+        <div class="team-list" data-slot="team"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div data-slot="footer"></div>
+          </div>
+  </footer>
+
+  <noscript><p class="noscript">This page needs JavaScript enabled to display the workshop details.</p></noscript>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
