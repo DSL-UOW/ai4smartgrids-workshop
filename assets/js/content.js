@@ -13,9 +13,9 @@ window.SITE_CONTENT = {
 
   hero: {
     title: "AI for Smart Grids and Renewable Energy Systems",
-    datetime: "[TBC date and time]",
-    location: "[TBC location]",
-    locationUrl: "",              // optional map link for the location
+    datetime: "Tuesday 1st December 1:00pm – 5:00pm",
+    location: "Room 249 - Sydney CBD campus",
+    locationUrl: "https://www.google.com/maps/search/?api=1&query=UOW+Sydney+CBD+Campus+201+Sussex+Street+Sydney",              // optional map link for the location
     ctaLabel: "Register",          // button text; clear it ("") to hide the button
     ctaUrl: "[TBC registration link]"  // replace with the real https:// link; the button becomes clickable
   },
@@ -29,24 +29,34 @@ window.SITE_CONTENT = {
 
   presenters: [
     // { name, title, affiliation, talk, photo, url }
-    { name: "[TBC presenter name]", title: "[TBC title]", affiliation: "[TBC affiliation]", talk: "", photo: "", url: "" },
-    { name: "[TBC presenter name]", title: "[TBC title]", affiliation: "[TBC affiliation]", talk: "", photo: "", url: "" },
-    { name: "[TBC presenter name]", title: "[TBC title]", affiliation: "[TBC affiliation]", talk: "", photo: "", url: "" },
-    { name: "[TBC presenter name]", title: "[TBC title]", affiliation: "[TBC affiliation]", talk: "", photo: "", url: "" },
-    { name: "[TBC presenter name]", title: "[TBC title]", affiliation: "[TBC affiliation]", talk: "", photo: "", url: "" },
-    { name: "[TBC presenter name]", title: "[TBC title]", affiliation: "[TBC affiliation]", talk: "", photo: "", url: "" },
-    { name: "[TBC presenter name]", title: "[TBC title]", affiliation: "[TBC affiliation]", talk: "", photo: "", url: "" },
-    { name: "[TBC presenter name]", title: "[TBC title]", affiliation: "[TBC affiliation]", talk: "", photo: "", url: "" }
+    { name: "Dr Debajyoti Biswas", title: "", affiliation: "University of Surrey, UK", talk: "Operation Research and Analytics for Clean Energy Transition", photo: "biswas.jpg", url: "" },
+    { name: "A/Prof Wenyuan Tang", title: "", affiliation: "North Carolina State University, USA", talk: "AI/ML for Net Load Forecasting", photo: "tang.jpg", url: "" },
+    { name: "Tim Ryan", title: "", affiliation: "Ready Energy", talk: "The Consumers’ Grid", photo: "ryan.jpg", url: "" },
+    { name: "Tatsuya Yamada", title: "", affiliation: "Mitsubishi Electric, Japan", talk: "Digital Twin for Low Voltage Distribution Networks", photo: "", url: "" },
+    { name: "A/Prof Ashish Agalgaonkar", title: "", affiliation: "University of Wollongong", talk: "Energy Technologies for Future Grids", photo: "agalgaonkar.jpg", url: "" },
+    { name: "Martin Ma", title: "", affiliation: "HighFlow Energy", talk: "", photo: "", url: "" },
+    { name: "Prof Jun Shen", title: "", affiliation: "University of Wollongong", talk: "", photo: "", url: "" },
+    { name: "Prof Hoa Khanh Dam", title: "", affiliation: "University of Wollongong", talk: "", photo: "prof-hoa-dam.png", url: "" }
   ],
 
   schedule: {
-    note: "[TBC date]",           // line under the heading, e.g. the date and time range
+    note: "Tuesday 1st December",   // line under the heading
     sessions: [
       // { time, title, speaker, description }   (speaker and description optional)
-      { time: "[TBC time]", title: "[TBC session]", speaker: "[TBC]", description: "" },
-      { time: "[TBC time]", title: "[TBC session]", speaker: "[TBC]", description: "" },
-      { time: "[TBC time]", title: "[TBC session]", speaker: "[TBC]", description: "" },
-      { time: "[TBC time]", title: "Closing & Networking", speaker: "", description: "Networking with presenters and attendees" }
+      { time: "13:00 – 13:10", title: "Opening & Introduction", speaker: "Prof Hoa Khanh Dam, University of Wollongong", description: "" },
+      { time: "13:10 – 13:25", title: "AI/ML for Net Load Forecasting", speaker: "A/Prof Wenyuan Tang, North Carolina State University, USA", description: "" },
+      { time: "13:25 – 13:40", title: "The Consumers’ Grid", speaker: "Tim Ryan, Ready Energy", description: "" },
+      { time: "13:40 – 13:55", title: "Operation Research and Analytics for Clean Energy Transition", speaker: "Dr Debajyoti Biswas, University of Surrey, UK", description: "" },
+      { time: "13:55 – 14:10", title: "Digital Twin for Low Voltage Distribution Networks", speaker: "Tatsuya Yamada, Mitsubishi Electric, Japan", description: "" },
+      { time: "14:10 – 14:20", title: "Short Break", speaker: "", description: "" },
+      { time: "14:20 – 14:35", title: "Energy Technologies for Future Grids", speaker: "A/Prof Ashish Agalgaonkar, University of Wollongong", description: "" },
+      { time: "14:35 – 14:50", title: "TBA", speaker: "Martin Ma, HighFlow Energy", description: "" },
+      { time: "14:50 – 15:05", title: "TBA", speaker: "", description: "" },
+      { time: "15:05 – 15:20", title: "TBA", speaker: "", description: "" },
+      { time: "15:20 – 15:30", title: "Short Break", speaker: "", description: "" },
+      { time: "15:30 – 16:10", title: "Panel discussion", speaker: "", description: "" },
+      { time: "16:10 – 16:15", title: "Closing remarks", speaker: "Prof Jun Shen, University of Wollongong", description: "" },
+      { time: "16:15 – 17:00", title: "Networking", speaker: "", description: "Networking with presenters and attendees" }
     ]
   },
 

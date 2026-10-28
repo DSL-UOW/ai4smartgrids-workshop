@@ -37,11 +37,11 @@
         <g class="grid-lines">
           <path d="M0 300 L120 220 L260 260 L400 160 L540 220 L680 120 L800 180"/>
           <path d="M60 380 L200 320 L260 260 L340 330 L480 290 L540 220 L660 300 L760 250"/>
-          <path d="M120 220 L180 120 L330 90 L400 160 L470 70 L680 120"/>
+          <path d="M120 220 L140 120 L330 90 L400 160 L470 70 L680 120"/>
         </g>
         <g class="grid-nodes">
           <circle cx="120" cy="220" r="5"/><circle cx="260" cy="260" r="5"/><circle cx="400" cy="160" r="7"/>
-          <circle cx="540" cy="220" r="5"/><circle cx="680" cy="120" r="7"/><circle cx="180" cy="120" r="4"/>
+          <circle cx="540" cy="220" r="5"/><circle cx="680" cy="120" r="7"/><circle cx="140" cy="120" r="4"/>
           <circle cx="330" cy="90" r="4"/><circle cx="470" cy="70" r="4"/><circle cx="480" cy="290" r="4"/>
           <circle cx="660" cy="300" r="4"/><circle cx="340" cy="330" r="4"/>
         </g>
@@ -84,21 +84,30 @@
       <div class="container">
         <h2 id="schedule-h">Schedule</h2>
         <p class="schedule-date" data-bind="schedule.note"></p>
-        <table class="schedule-table">
-          <caption class="sr-only">Workshop schedule</caption>
-          <colgroup><col style="width:20%"><col style="width:80%"></colgroup>
-          <thead class="sr-only"><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
-          <tbody data-slot="schedule"></tbody>
-        </table>
+        <div class="schedule-layout">
+          <picture class="schedule-photo">
+            <source media="(min-width: 768px)" srcset="assets/images/hero/ee5a9c1e59c4dd88cfb24798e18cdc52.jpg">
+            <img src="assets/images/hero/bae38054bdbf2041885ac3df5aa4e0db.jpg" alt="" loading="lazy">
+          </picture>
+          <table class="schedule-table">
+            <caption class="sr-only">Workshop schedule</caption>
+            <colgroup><col style="width:20%"><col style="width:80%"></colgroup>
+            <thead class="sr-only"><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
+            <tbody data-slot="schedule"></tbody>
+          </table>
+        </div>
       </div>
     </section>
 
     <!-- 5. Venue -->
     <section id="venue" class="section grey" aria-labelledby="venue-h">
-      <div class="container narrow">
-        <h2 id="venue-h">Venue</h2>
-        <svg class="icon venue-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5M4 9v1h16V9M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18M2 22h20"/></svg>
-        <div data-slot="venue"></div>
+      <div class="container venue-layout">
+        <div class="venue-text">
+          <h2 id="venue-h">Venue</h2>
+          <svg class="icon venue-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5M4 9v1h16V9M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18M2 22h20"/></svg>
+          <div data-slot="venue"></div>
+        </div>
+        <img class="venue-photo" src="assets/images/venue/sydney-cbd-campus-exterior.webp" alt="Exterior of the UOW Sydney CBD campus building" width="900" height="506" loading="lazy">
       </div>
     </section>
 
