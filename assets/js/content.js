@@ -9,8 +9,6 @@
  * - Do not add unconfirmed details as real values; keep "[TBC]" until approved.
  */
 window.SITE_CONTENT = {
-  brand: "DSL-UOW",
-
   hero: {
     title: "AI for Smart Grids and Renewable Energy Systems",
     datetime: "Tuesday 1st December 1:00pm – 5:00pm",
@@ -94,6 +92,6 @@ window.SITE_CONTENT = {
   footer: {
     title: "AI for Smart Grids and Renewable Energy Systems Workshop",
     org: "University of Wollongong",      // shown after the workshop time
-    copyright: "DSL-UOW"
+    copyright: ""                         // optional line, e.g. © notice; empty hides it
   }
 };

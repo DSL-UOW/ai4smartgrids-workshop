@@ -47,8 +47,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 50; background: var(--header-bg); color: var(--on-dark); border-bottom: 2px solid var(--green); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; min-height: var(--header-h); position: relative; }
-.brand { font-family: var(--font-title); font-weight: 700; color: var(--on-dark); text-decoration: none; letter-spacing: .04em; }
+.header-inner { display: flex; align-items: center; justify-content: flex-end; min-height: var(--header-h); position: relative; }
 .menu-toggle { background: none; border: 1px solid rgba(255,255,255,.5); border-radius: 12px; width: 44px; height: 44px; cursor: pointer; display: grid; place-items: center; }
 .menu-icon, .menu-icon::before, .menu-icon::after { display: block; width: 20px; height: 2px; background: var(--on-dark); content: ""; position: relative; }
 .menu-icon::before { position: absolute; top: -6px; }
@@ -120,7 +119,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .team-list p { margin: 0 0 .5em; }
 
 /* Footer */
-.site-footer { background: var(--navy); color: var(--on-dark); padding: 12px 0; font-size: .75rem; line-height: 2; }
+.site-footer { background: var(--navy); border-top: 2px solid var(--green); color: var(--on-dark); padding: 12px 0; font-size: .75rem; line-height: 2; }
 .site-footer p { margin: 0; }
 .site-footer .copyright { color: rgba(255, 255, 255, .75); }
 

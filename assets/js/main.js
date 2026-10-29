@@ -80,7 +80,6 @@
   }
 
   var hero = C.hero || {};
-  bindText("brand", C.brand);
   bindText("hero.title", hero.title);
   bindText("hero.datetime", hero.datetime);
   bindText("schedule.note", (C.schedule || {}).note);
