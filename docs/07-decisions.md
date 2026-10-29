@@ -6,7 +6,7 @@
 | 2 | 2026-10-26 | Built from scratch, not on the Nerfies template | Avoids CC BY-SA obligations; lighter |
 | 3 | 2026-10-26 | All content in `assets/js/content.js`, rendered by JS | Owner adds content in one place and the page updates itself. A `.js` file (not JSON) works when opened from disk. Trade-off: content needs JavaScript (noscript notice shown) |
 | 4 | 2026-10-26 | Missing content shown as highlighted `[TBC]` placeholders | No invented details |
-| 5 | 2026-10-26 | Nav: About, Presenters, Schedule, Venue; Team is its own section placed after Venue and highlights as Venue | Owner request |
+| 5 | 2026-10-26 | Nav: About, Presenters, Schedule, Venue, Team (Team added 2026-10-29) | Owner request |
 | 6 | 2026-10-26 | Only `index.html` and `assets/` are published; docs and CLAUDE.md excluded | Owner request |
 | 7 | 2026-10-26 | Fonts: Goldman (titles), Inter (body) via Google Fonts | Owner request |
 | 8 | 2026-10-26 | Registration button hidden unless `ctaLabel` and `ctaUrl` are set | No registration details supplied |

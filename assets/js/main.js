@@ -115,14 +115,37 @@
     ]);
   }));
 
+  // Solid icons for session-group rows (set `icon` in content.js). Static, trusted markup.
+  var ICONS = {
+    sprout: '<path d="M24 41C9 39 5 27 7 16c13 0 21 8 17 25z"/><path d="M26 41C26 22 34 8 45 5c2 17-4 33-19 36z"/>',
+    tree: '<path d="M20 45c1-8 2-12 2-16h4c0 4 1 8 2 16z"/>' +
+      '<path d="M24 32c-4-3-7-5-10-9M24 32c4-3 7-5 10-9M24 30V18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>' +
+      '<ellipse cx="24" cy="9" rx="4.5" ry="7"/><ellipse cx="14" cy="14" rx="4.5" ry="7" transform="rotate(-35 14 14)"/>' +
+      '<ellipse cx="34" cy="14" rx="4.5" ry="7" transform="rotate(35 34 14)"/><ellipse cx="9" cy="24" rx="4" ry="6.5" transform="rotate(-60 9 24)"/>' +
+      '<ellipse cx="39" cy="24" rx="4" ry="6.5" transform="rotate(60 39 24)"/><ellipse cx="24" cy="22" rx="4" ry="6"/>'
+  };
+  function icon(name) {
+    if (!ICONS[name]) return null;
+    var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("class", "session-icon");
+    svg.setAttribute("viewBox", "0 0 48 48");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("focusable", "false");
+    svg.innerHTML = ICONS[name];
+    return svg;
+  }
+
   // Schedule: Time | Session (title, optional "Presenter: x" and description lines)
   fill("schedule", ((C.schedule || {}).sessions || []).map(function (s) {
     var presenter = s.speaker ? el("div", { "class": "session-line" }, [
       document.createTextNode("Presenter: "),
       txt("span", s.speaker)
     ]) : null;
-    return el("tr", {}, [
-      el("td", { "class": "time" }, [txt("span", s.time)]),
+    return el("tr", { "class": s.icon ? "group" : "" }, [
+      el("td", { "class": "time" }, [s.icon
+        // icon centred over the width of a normal time string
+        ? el("span", { "class": "time-ref" }, [el("span", { "class": "time-ghost", "aria-hidden": "true", text: s.time || "00:00 – 00:00" }), icon(s.icon)])
+        : txt("span", s.time)]),
       el("td", {}, [
         txt("strong", s.title),
         presenter,
@@ -173,10 +196,10 @@
   nav.addEventListener("click", function (e) { if (e.target.tagName === "A") setMenu(false); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
 
-  // ---- Highlight the nav link for the section in view (Team counts as Venue) ----
+  // ---- Highlight the nav link for the section in view ----
   var links = {};
   nav.querySelectorAll("a").forEach(function (a) { links[a.getAttribute("href").slice(1)] = a; });
-  var alias = { team: "venue" };
+  var alias = {};
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
