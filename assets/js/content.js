@@ -32,7 +32,7 @@ window.SITE_CONTENT = {
     { name: "Tim Ryan", title: "", affiliation: "Ready Energy", talk: "", photo: "ryan.jpg", url: "" },
     { name: "Tatsuya Yamada", title: "", affiliation: "Mitsubishi Electric, Japan", talk: "", photo: "", url: "" },
     { name: "A/Prof Ashish Agalgaonkar", title: "", affiliation: "University of Wollongong", talk: "", photo: "agalgaonkar.jpg", url: "" },
-    { name: "Martin Ma", title: "", affiliation: "HighFlow Energy", talk: "", photo: "", url: "" },
+    { name: "Martin Ma", title: "", affiliation: "HighFlow Energy", talk: "", photo: "martin-ma.png", url: "" },
     { name: "Prof Jun Shen", title: "", affiliation: "University of Wollongong", talk: "", photo: "junshen.jpeg", url: "" },
     { name: "Prof Hoa Khanh Dam", title: "", affiliation: "University of Wollongong", talk: "", photo: "prof-hoa-dam.png", url: "" }
   ],
@@ -50,7 +50,7 @@ window.SITE_CONTENT = {
       { time: "14:10 – 14:20", title: "Short Break", speaker: "", description: "" },
       { time: "", title: "Presentation Session 2", icon: "tree", speaker: "", description: "Session Chair: Dr John Le, University of Wollongong" },
       { time: "14:20 – 14:35", title: "Energy Technologies for Future Grids", speaker: "A/Prof Ashish Agalgaonkar, University of Wollongong", description: "" },
-      { time: "14:35 – 14:50", title: "TBA", speaker: "Martin Ma, HighFlow Energy", description: "" },
+      { time: "14:35 – 14:50", title: "AI-Driven Energy Management: From User Engagement to Intelligent Forecasting and Optimisation", speaker: "Martin Ma, HighFlow Energy", description: "" },
       { time: "14:50 – 15:05", title: "TBA", speaker: "", description: "" },
       { time: "15:05 – 15:20", title: "TBA", speaker: "", description: "" },
       { time: "15:20 – 15:30", title: "Short Break", speaker: "", description: "" },
