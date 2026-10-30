@@ -12,10 +12,10 @@ window.SITE_CONTENT = {
   hero: {
     title: "AI for Smart Grids and Renewable Energy Systems",
     datetime: "Tuesday 1st December 1:00pm – 5:00pm",
-    location: "Room 249 - Sydney CBD campus",
+    location: "Room 249 - University of Wollongong, Sydney CBD campus",
     locationUrl: "https://www.google.com/maps/search/?api=1&query=UOW+Sydney+CBD+Campus+201+Sussex+Street+Sydney",              // optional map link for the location
     ctaLabel: "Register",          // button text; clear it ("") to hide the button
-    ctaUrl: "[TBC registration link]"  // replace with the real https:// link; the button becomes clickable
+    ctaUrl: "https://www.eventbrite.com.au/e/ai-for-smart-grids-and-renewable-energy-systems-workshop-tickets-2004093869713?aff=oddtdtcreator"  // replace with the real https:// link; the button becomes clickable
   },
 
   about: {

@@ -69,7 +69,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .hero-meta { display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 1.05rem; }
 .hero-meta li { display: flex; align-items: center; gap: 10px; justify-content: center; }
 .hero-meta a { color: #fff; }
-.button { display: inline-block; margin-top: 16px; background: var(--green); color: var(--navy); padding: 12px 28px; border-radius: 999px; font-weight: 700; text-decoration: none; transition: background .2s, box-shadow .2s; }
+.button { display: inline-block; margin-top: 16px; background: var(--green); color: var(--navy); padding: 12px 60px; border-radius: 999px; font-weight: 700; text-decoration: none; transition: background .2s, box-shadow .2s; }
 .button:hover { background: var(--green-light); box-shadow: 0 0 18px rgba(145, 239, 68, .55); }
 .button.is-placeholder { cursor: default; }
 
