@@ -34,7 +34,7 @@ window.SITE_CONTENT = {
     { name: "A/Prof Ashish Agalgaonkar", title: "", affiliation: "University of Wollongong", talk: "", photo: "agalgaonkar.jpg", url: "" },
     { name: "Martin Ma", title: "", affiliation: "HighFlow Energy", talk: "", photo: "martin-ma.png", url: "" },
     { name: "Vidura Jayasooriya", title: "", affiliation: "Essential Energy", talk: "", photo: "vidura.jpeg", url: "" },
-    { name: "Nathan Williams", title: "", affiliation: "Essential Energy", talk: "", photo: "william.jpeg", url: "" },
+    { name: "Nathan Williams", title: "", affiliation: "Essential Energy", talk: "", photo: "williams.jpeg", url: "" },
     { name: "Emmanuel Cilia", title: "", affiliation: "AGL", talk: "", photo: "", url: "" },
     { name: "Prof Jun Shen", title: "", affiliation: "University of Wollongong", talk: "", photo: "junshen.jpeg", url: "" },
     { name: "Prof Hoa Khanh Dam", title: "", affiliation: "University of Wollongong", talk: "", photo: "prof-hoa-dam.png", url: "" }
