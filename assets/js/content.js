@@ -31,7 +31,7 @@ window.SITE_CONTENT = {
     { name: "A/Prof Wenyuan Tang", title: "", affiliation: "North Carolina State University, USA", talk: "", photo: "tang.jpg", url: "" },
     { name: "Tim Ryan", title: "", affiliation: "Ready Energy", talk: "", photo: "ryan.jpg", url: "" },
     { name: "Tatsuya Yamada", title: "", affiliation: "Mitsubishi Electric, Japan", talk: "", photo: "tatsuya_yamada.jpg", url: "" },
-    { name: "A/Prof Ashish Agalgaonkar", title: "", affiliation: "University of Wollongong", talk: "", photo: "agalgaonkar.jpg", url: "" },
+    { name: "A/Prof Ashish Agalgaonkar", title: "", affiliation: "University of Wollongong", talk: "", photo: "agalgaonkar.png", url: "" },
     { name: "Martin Ma", title: "", affiliation: "HighFlow Energy", talk: "", photo: "martin-ma.png", url: "" },
     { name: "Vidura Jayasooriya", title: "", affiliation: "Essential Energy", talk: "", photo: "vidura.jpeg", url: "" },
     { name: "Nathan Williams", title: "", affiliation: "Essential Energy", talk: "", photo: "williams.jpeg", url: "" },
