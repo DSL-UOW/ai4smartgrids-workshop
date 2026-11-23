@@ -35,7 +35,7 @@ window.SITE_CONTENT = {
     { name: "Martin Ma", title: "", affiliation: "HighFlow Energy", talk: "", photo: "martin-ma.png", url: "" },
     { name: "Vidura Jayasooriya", title: "", affiliation: "Essential Energy", talk: "", photo: "vidura.jpeg", url: "" },
     { name: "Nathan Williams", title: "", affiliation: "Essential Energy", talk: "", photo: "williams.jpeg", url: "" },
-    { name: "Emmanuel Cilia", title: "", affiliation: "AGL", talk: "", photo: "", url: "" },
+    { name: "Emmanuel Cilia", title: "", affiliation: "AGL", talk: "", photo: "emmanuel.jpg", url: "" },
     { name: "Prof Jun Shen", title: "", affiliation: "University of Wollongong", talk: "", photo: "junshen.jpeg", url: "" },
     { name: "Prof Hoa Khanh Dam", title: "", affiliation: "University of Wollongong", talk: "", photo: "prof-hoa-dam.png", url: "" }
   ],
@@ -55,7 +55,7 @@ window.SITE_CONTENT = {
       { time: "14:20 – 14:35", title: "Energy Technologies for Future Grids", speaker: "A/Prof Ashish Agalgaonkar, University of Wollongong", description: "" },
       { time: "14:35 – 14:50", title: "AI-Driven Energy Management: From User Engagement to Intelligent Forecasting and Optimisation", speaker: "Martin Ma, HighFlow Energy", description: "" },
       { time: "14:50 – 15:05", title: "On the Path to an Intelligent Utility: Learning, Innovating and Scaling at Essential Energy", speaker: "Vidura Jayasooriya and Nathan Williams, Essential Energy", description: "" },
-      { time: "15:05 – 15:20", title: "TBA", speaker: "Emmanuel Cilia, AGL", description: "" },
+      { time: "15:05 – 15:20", title: "The use of agents (Bots) for the optimisation of energy in residential and C & I projects", speaker: "Emmanuel Cilia, AGL", description: "" },
       { time: "15:20 – 15:30", title: "Short Break", speaker: "", description: "" },
       { time: "15:30 – 16:10", title: "Panel discussion", speaker: "", description: "Session Chair: A/Prof Ashish Agalgaonkar, University of Wollongong" },
       { time: "16:10 – 16:15", title: "Closing remarks", speaker: "Prof Jun Shen, University of Wollongong", description: "" },
